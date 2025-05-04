@@ -2,8 +2,10 @@ import { GraduationCap, Calendar } from 'lucide-react';
 
 export function Education() {
   return (
-    <div className="max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">Education</h1>
+    <div className="max-w-4xl mx-auto py-16 px-4">
+      <h1 className="text-4xl font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+        Education
+      </h1>
 
       <div className="space-y-8">
         <EducationCard
@@ -44,10 +46,10 @@ interface EducationCardProps {
 
 function EducationCard({ degree, institution, year, grade, description }: EducationCardProps) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow">
       <div className="flex items-start gap-4">
-        <div className="p-2 bg-blue-100 dark:bg-blue-900 rounded-lg">
-          <GraduationCap className="text-blue-600 dark:text-blue-300" size={24} />
+        <div className="p-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg">
+          <GraduationCap className="text-white" size={24} />
         </div>
 
         <div className="flex-1">
@@ -60,10 +62,10 @@ function EducationCard({ degree, institution, year, grade, description }: Educat
 
           <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400 mb-4">
             <div className="flex items-center gap-1">
-              <Calendar size={16} />
+              <Calendar className="text-indigo-500 dark:text-indigo-400" size={16} />
               <span>{year}</span>
             </div>
-            <div className="font-medium">
+            <div className="font-medium text-indigo-500 dark:text-indigo-400">
               {grade}
             </div>
           </div>

@@ -2,20 +2,22 @@ import { Download } from 'lucide-react';
 
 export function Resume() {
   return (
-    <div className="max-w-4xl mx-auto">
-      <div className="flex justify-between items-center mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Resume</h1>
+    <div className="max-w-4xl mx-auto py-16 px-4">
+      <div className="flex justify-between items-center mb-10">
+        <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+          Resume
+        </h1>
         <a
           href="/resume.pdf"
           download
-          className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+          className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white rounded-lg shadow-md hover:shadow-lg hover:translate-y-1 transition"
         >
           <Download size={20} />
           <span>Download PDF</span>
         </a>
       </div>
 
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
             Gurrapu Dileep Kumar

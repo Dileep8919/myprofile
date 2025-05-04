@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import profileImage from '../assets/dileep.jpeg'; // Import the image
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,11 +9,16 @@ export function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-white shadow-lg dark:bg-gray-800">
+    <nav className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg dark:bg-gradient-to-r dark:from-gray-900 dark:via-gray-800 dark:to-gray-700">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="text-xl font-bold text-gray-800 dark:text-white">
-            Dileep Kumar
+          <Link to="/" className="flex items-center text-xl font-bold text-white">
+            <img
+              src={profileImage}
+              alt="Dileep Kumar"
+              className="h-14 w-14 rounded-full mr-2"
+            />
+            {/* Dileep Kumar */}
           </Link>
 
           {/* Desktop Menu */}
@@ -25,7 +31,7 @@ export function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden" onClick={toggleMenu}>
+          <button className="md:hidden text-white" onClick={toggleMenu}>
             {isOpen ? <X /> : <Menu />}
           </button>
         </div>
@@ -51,7 +57,7 @@ function NavLink({ to, children }: { to: string; children: React.ReactNode }) {
   return (
     <Link 
       to={to}
-      className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
+      className="text-white hover:text-yellow-300 transition-colors"
     >
       {children}
     </Link>
@@ -62,7 +68,7 @@ function MobileNavLink({ to, children, onClick }: { to: string; children: React.
   return (
     <Link
       to={to}
-      className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors block"
+      className="text-white hover:text-yellow-300 transition-colors block"
       onClick={onClick}
     >
       {children}
