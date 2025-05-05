@@ -5,7 +5,6 @@ import { Projects } from './pages/Projects';
 import { Education } from './pages/Education';
 import { Experience } from './pages/Experience';
 import { Resume } from './pages/Resume';
-import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
             <Route path="/resume" element={<Resume />} />
           </Routes>
         </main>
-        <Footer /> {/* ⬅️ Footer shown on all pages */}
       </div>
     </Router>
   );
