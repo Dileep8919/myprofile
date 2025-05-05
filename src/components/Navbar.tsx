@@ -28,6 +28,7 @@ export function Navbar() {
             <NavLink to="/education">Education</NavLink>
             <NavLink to="/experience">Experience</NavLink>
             <NavLink to="/resume">Resume</NavLink>
+            <NavLink to="/certificate">Certifications</NavLink>
           </div>
 
           {/* Mobile Menu Button */}
