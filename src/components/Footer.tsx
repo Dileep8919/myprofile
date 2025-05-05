@@ -1,3 +1,4 @@
+
 export function Footer() {
     return (
       <footer className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-6 mt-10 border-t border-gray-300 dark:border-gray-700">
@@ -10,4 +11,4 @@ export function Footer() {
         </div>
       </footer>
     );
-  }
+  }  
