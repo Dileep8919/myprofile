@@ -56,20 +56,19 @@ export function Resume() {
               <ul className="list-disc list-inside">
                 <li>JavaScript</li>
                 <li>HTML, CSS, XML, JSON</li>
-                <li>Shell Scripting</li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-2">Frameworks & Tools</h4>
               <ul className="list-disc list-inside">
                 <li>React JS, Free Marker, jQuery</li>
-                <li>Git, Eclipse, VS Code, MRemoteNG, FileZilla</li>
+                <li>Git, Eclipse, VS Code</li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-2">Databases</h4>
               <ul className="list-disc list-inside">
-                <li>MySQL, Oracle</li>
+                <li>MySQL</li>
               </ul>
             </div>
           </div>

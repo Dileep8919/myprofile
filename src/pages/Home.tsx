@@ -7,7 +7,7 @@ export function Home() {
         Dileep Kumar Gurrapu
       </h1>
       <p className="text-xl text-gray-700 dark:text-gray-300 mb-6">
-        Frontend Developer | React.js Specialist
+        Frontend Developer | React JS Developer 
       </p>
 
       <div className="flex justify-center space-x-6 mb-8">
@@ -25,9 +25,8 @@ export function Home() {
           Technical Skills
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 text-left text-gray-700 dark:text-gray-300">
-          <SkillCategory title="Frontend" skills={["React.js", "JavaScript", "HTML", "CSS", "jQuery"]} />
-          <SkillCategory title="Backend" skills={["Node.js", "Java"]} />
-          <SkillCategory title="Tools" skills={["Git", "VS Code", "Eclipse", "AWS", "Azure"]} />
+          <SkillCategory title="Frontend" skills={["React.js", "Redux", "React Hooks", "JavaScript", "HTML", "CSS", "jQuery"]} />
+          <SkillCategory title="Tools" skills={["Git", "VS Code", "Eclipse", "AWS"]} />
         </div>
       </section>
     </div>
