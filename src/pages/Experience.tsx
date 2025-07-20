@@ -8,17 +8,29 @@ export function Experience() {
       </h1>
 
       <div className="space-y-8">
+        {/* Italent Applications Pvt. Ltd. Experience */}
         <ExperienceCard
-          title="React JS Developer"
-          company="ITalent Applications Pvt. Ltd., Hyderabad"
-          period="April 2022 – Present"
-          description="Working as a React JS Developer focusing on building scalable and secure web applications with responsive user interfaces."
+          title="Software Engineer"
+          company="Italent Applications Pvt Ltd"
+          period="April 2022 – Sep 2025"
+          description="As a Software Engineer, I focus on building scalable and secure web applications with responsive user interfaces for enterprise platforms."
           responsibilities={[
-            "Developed and maintained web applications using JavaScript and React JS",
-            "Collaborated with UI/UX designers to implement responsive and user-friendly interfaces",
-            "Ensured data security with robust security protocol implementations",
-            "Deployed applications on AWS and Azure cloud platforms",
-            "Conducted code reviews and performance optimizations for scalability"
+            "Contributed to enterprise-scale frontend development using React.js and TypeScript, building robust and scalable user interfaces.",
+            "Collaborated effectively in cross-functional Agile teams, actively participating in code reviews, pull requests, stand-ups, and sprint planning to ensure timely delivery.",
+            "Supported deployment workflows using Git, internal CI/CD tools, and manual deployment tools (e.g., FileZilla, mRemoteNG, Tomcat) to ensure seamless application delivery."
+          ]}
+        />
+
+        {/* Kuncham Software Solutions Pvt Ltd. Experience */}
+        <ExperienceCard
+          title="Associate Software Engineer"
+          company="Kuncham Software Solutions Pvt Ltd."
+          period="July 2019 – Feb 2021"
+          description="As an Associate Software Engineer, I was responsible for building responsive web UIs and delivering client-facing features in an agile environment."
+          responsibilities={[
+            "Built responsive web UIs using React.js, JavaScript, and Bootstrap in a small agile team, ensuring optimal user experience across devices.",
+            "Delivered features for client-facing applications with a focus on cross-device usability and performance.",
+            "Practiced collaborative development using Git and regular sprint planning, ensuring efficient project workflows."
           ]}
         />
       </div>
@@ -63,9 +75,12 @@ function ExperienceCard({ title, company, period, description, responsibilities 
             <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
               Key Responsibilities:
             </h4>
-            <ul className="list-disc list-inside space-y-1">
+            {/* CHANGES ARE HERE: */}
+            <ul className="list-disc pl-5 text-left -mt-2"> {/* Removed list-inside, added pl-5 and text-left, adjusted margin-top */}
               {responsibilities.map((responsibility, index) => (
-                <li key={index}>{responsibility}</li>
+                <li key={index} className="mb-1 text-gray-700 dark:text-gray-300"> {/* Added mb-1 for slight spacing, adjusted text color */}
+                  {responsibility}
+                </li>
               ))}
             </ul>
           </div>
